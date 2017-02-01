@@ -5084,10 +5084,10 @@ TODOS
 		};
 
 		editor.runCallbacks = function () {
+			isReady = true;
 			$.each(callbacks, function() {
 				this();
 			});
-			isReady = true;
 		};
 
 		editor.loadFromString = function (str) {
