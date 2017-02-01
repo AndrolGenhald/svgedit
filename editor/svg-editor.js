@@ -1541,7 +1541,7 @@ TODOS
 			};
 
 			// updates the context panel tools based on the selected element
-			var updateContextPanel = function() {
+			var updateContextPanel = editor.updateContextPanel = function() {
 				var elem = selectedElement;
 				// If element has just been deleted, consider it null
 				if (elem != null && !elem.parentNode) {elem = null;}
